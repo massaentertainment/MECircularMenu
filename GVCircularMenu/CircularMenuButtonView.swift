@@ -14,7 +14,7 @@ class CircularMenuButtonView: UIView {
     fileprivate var iconView:UIImageView!
     fileprivate var shapeLayer:CAShapeLayer!
     
-    var properties:CircularMenuButtonViewAppearance
+    let properties:CircularMenuButtonViewAppearance
     
     //MARK: - Constructors
     public init(frame: CGRect, properties:[String:Any]) {
