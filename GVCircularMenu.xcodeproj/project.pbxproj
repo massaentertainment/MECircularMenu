@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BE293DF01EDF3D1E0052C06D /* GVCircularMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = BE293DEE1EDF3D1E0052C06D /* GVCircularMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE293DF91EDF3DD20052C06D /* CircularMenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DF81EDF3DD20052C06D /* CircularMenuButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE293DEB1EDF3D1E0052C06D /* GVCircularMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GVCircularMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE293DEE1EDF3D1E0052C06D /* GVCircularMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GVCircularMenu.h; sourceTree = "<group>"; };
 		BE293DEF1EDF3D1E0052C06D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE293DF81EDF3DD20052C06D /* CircularMenuButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +48,27 @@
 		BE293DED1EDF3D1E0052C06D /* GVCircularMenu */ = {
 			isa = PBXGroup;
 			children = (
+				BE293DF61EDF3D900052C06D /* View */,
 				BE293DEE1EDF3D1E0052C06D /* GVCircularMenu.h */,
 				BE293DEF1EDF3D1E0052C06D /* Info.plist */,
 			);
 			path = GVCircularMenu;
+			sourceTree = "<group>";
+		};
+		BE293DF61EDF3D900052C06D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE293DF71EDF3DA50052C06D /* CircularMenuButton */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BE293DF71EDF3DA50052C06D /* CircularMenuButton */ = {
+			isa = PBXGroup;
+			children = (
+				BE293DF81EDF3DD20052C06D /* CircularMenuButtonView.swift */,
+			);
+			name = CircularMenuButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +115,7 @@
 					BE293DEA1EDF3D1E0052C06D = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = E9XV8HU23K;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE293DF91EDF3DD20052C06D /* CircularMenuButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +263,7 @@
 		BE293DF41EDF3D1E0052C06D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = E9XV8HU23K;
@@ -254,6 +276,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.bepiducb.GVCircularMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -261,6 +284,7 @@
 		BE293DF51EDF3D1E0052C06D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = E9XV8HU23K;
@@ -296,6 +320,7 @@
 				BE293DF51EDF3D1E0052C06D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
