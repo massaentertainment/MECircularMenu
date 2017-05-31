@@ -23,8 +23,12 @@ public class CircularMenuExternalCircle : UIView {
         super.init(frame: frame)
     }
     
+    override public init(frame: CGRect) {
+        fatalError("Incorrect constructor (init(frame:)). Must use init(frame:angle:).")
+    }
+    
     required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("Incorrect constructor (init(coder:)). Must use init(frame:angle:).")
     }
     
 }
