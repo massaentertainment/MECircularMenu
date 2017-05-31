@@ -79,6 +79,16 @@ public class CircularMenuExternalCircle : UIView {
         }
     }
     
+    public func setOpen(_ opened:Bool, animated:Bool = true){
+        if opened {
+            animateOpening()
+        } else {
+            animateClosing()
+        }
+        
+        isOpen = opened
+    }
+    
     func createAnimation(keyPath:String,
                          fromValue:CGFloat,
                          toValue:CGFloat,
