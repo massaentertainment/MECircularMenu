@@ -16,11 +16,18 @@ class CircularMenuButtonView: UIView {
     
     let properties:CircularMenuButtonViewAppearance
     
+    var radius:CGFloat {
+        return frame.width / 2
+    }
+    
     //MARK: - Constructors
     public init(frame: CGRect, properties:[String:Any]) {
         self.properties = CircularMenuButtonViewAppearance(properties: properties)
         
         super.init(frame: frame)
+        
+        createShape()
+        createIcon()
     }
     
     override init(frame: CGRect) {
@@ -36,10 +43,7 @@ class CircularMenuButtonView: UIView {
 extension CircularMenuButtonView {
     
     fileprivate func createShape(){
-        let radius = frame.width / 2 //half the width so it can be circular.
-        
         let path = CGMutablePath()
-        
         path.move(to: .zero) //starting point
         //the - 2.0 is to prevent the stroke to being "cut" when rendering
         path.addArc(center: path.currentPoint, radius: radius - 2.0, startAngle: 0, endAngle: properties.angle, clockwise: false)
@@ -60,6 +64,32 @@ extension CircularMenuButtonView {
         
         //adds the shapelayer to the views layer.
         layer.addSublayer(shapeLayer)
+    }
+    
+    fileprivate func createIcon(){
+        let side = radius / 3
+        let iconFrame = CGRect(x: 0, y: 0, width: side, height: side)
+        
+        iconView = UIImageView(frame: iconFrame)
+        iconView.center = getIconCenterPoint(basePoint: shapeLayer.frame.origin)
+        iconView.contentMode = .scaleAspectFit
+        iconView.transform = CGAffineTransform(rotationAngle: .pi / 4)
+        
+        self.addSubview(iconView)
+    }
+    
+    fileprivate func getIconCenterPoint(basePoint:CGPoint) -> CGPoint {
+        //from the linear algebra, we rotate the point (as matrix) for half the angle of the properties
+        let baseX = radius / 2 // the center the icon is on the middle of the radius
+        let baseAngle = properties.angle / 2 // and in the middle of the arc
+        
+        let cosValue = cos(baseAngle)
+        let sinValue = sin(baseAngle)
+        
+        let x = baseX * cosValue - basePoint.y * sinValue
+        let y = baseX * sinValue + basePoint.y * cosValue
+        
+        return CGPoint(x: x, y: y)
     }
     
 }
