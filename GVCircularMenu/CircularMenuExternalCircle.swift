@@ -79,4 +79,25 @@ public class CircularMenuExternalCircle : UIView {
         }
     }
     
+    func createAnimation(keyPath:String,
+                         fromValue:CGFloat,
+                         toValue:CGFloat,
+                         duration:Double = 0.35,
+                         timingFunction:String = kCAMediaTimingFunctionEaseIn,
+                         fillMode: String = kCAFillModeForwards, removedOnCompletion:Bool = false,
+                         delegate:CAAnimationDelegate? = nil) -> CABasicAnimation {
+        
+        let animation = CABasicAnimation(keyPath: keyPath)
+        
+        animation.fromValue = fromValue
+        animation.toValue = toValue
+        animation.timingFunction = CAMediaTimingFunction(name: timingFunction)
+        animation.fillMode = fillMode
+        animation.duration = duration
+        animation.isRemovedOnCompletion = removedOnCompletion
+        animation.delegate = delegate
+        
+        return animation
+    }
+    
 }
