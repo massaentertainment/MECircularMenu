@@ -21,6 +21,11 @@ public class CircularMenuExternalCircle : UIView {
         self.dataSource = dataSource
         self.circularMenu = parent
         super.init(frame: frame)
+        
+        viewSetup()
+        
+        createButtons()
+        createSeparators()
     }
     
     override public init(frame: CGRect) {
@@ -29,6 +34,26 @@ public class CircularMenuExternalCircle : UIView {
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("Incorrect constructor (init(coder:)). Must use init(frame:angle:).")
+    }
+    
+    func createButtons() {
+        let numberOfButtons = dataSource.numberOfButtons(in: circularMenu)
+        
+        //creating buttons
+        for i in 0..<numberOfButtons {
+            let angle = CGFloat((2.0 * Double.pi) / Double(numberOfButtons))
+            let rotationAngle = CGFloat(i) * angle
+            let button = CircularMenuButtonView(frame: CGRect(origin: CGPoint.zero, size: frame.size), properties: [kCircularMenuButtonAngle: angle])
+            
+            button.transform = CGAffineTransform(rotationAngle: rotationAngle)
+            button.iconView.image = dataSource.circularMenu(circularMenu, inactiveImageForButtonIndex: i)
+            buttons.append(button)
+            addSubview(button)
+        }
+    }
+    
+    func createSeparators() {
+        
     }
     
 }

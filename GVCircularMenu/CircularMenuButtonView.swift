@@ -11,7 +11,7 @@ import UIKit
 public class CircularMenuButtonView: UIView {
 
     //MARK: - Properties
-    fileprivate var iconView:UIImageView!
+    var iconView:UIImageView!
     fileprivate var shapeLayer:CAShapeLayer!
     
     let properties:CircularMenuButtonViewAppearance
