@@ -10,6 +10,7 @@
 		BE293DF01EDF3D1E0052C06D /* GVCircularMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = BE293DEE1EDF3D1E0052C06D /* GVCircularMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE293DF91EDF3DD20052C06D /* CircularMenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DF81EDF3DD20052C06D /* CircularMenuButtonView.swift */; };
 		BE293DFB1EDF42680052C06D /* CircularMenuButtonViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DFA1EDF42670052C06D /* CircularMenuButtonViewAppearance.swift */; };
+		BE293DFD1EDF43670052C06D /* CircularMenuConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DFC1EDF43670052C06D /* CircularMenuConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		BE293DEF1EDF3D1E0052C06D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE293DF81EDF3DD20052C06D /* CircularMenuButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuButtonView.swift; sourceTree = "<group>"; };
 		BE293DFA1EDF42670052C06D /* CircularMenuButtonViewAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuButtonViewAppearance.swift; sourceTree = "<group>"; };
+		BE293DFC1EDF43670052C06D /* CircularMenuConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 				BE293DF61EDF3D900052C06D /* View */,
 				BE293DEE1EDF3D1E0052C06D /* GVCircularMenu.h */,
 				BE293DEF1EDF3D1E0052C06D /* Info.plist */,
+				BE293DFC1EDF43670052C06D /* CircularMenuConstants.swift */,
 			);
 			path = GVCircularMenu;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE293DFD1EDF43670052C06D /* CircularMenuConstants.swift in Sources */,
 				BE293DFB1EDF42680052C06D /* CircularMenuButtonViewAppearance.swift in Sources */,
 				BE293DF91EDF3DD20052C06D /* CircularMenuButtonView.swift in Sources */,
 			);
