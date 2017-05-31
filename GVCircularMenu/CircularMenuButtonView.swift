@@ -37,6 +37,10 @@ public class CircularMenuButtonView: UIView {
     required public init?(coder aDecoder: NSCoder) {
         fatalError("Incorrect constructor (init(coder:)). Must use init(frame:angle:).")
     }
+    
+    public func touch(at location:CGPoint) -> Bool {
+        return shapeLayer.frame.contains(location)
+    }
 
 }
 

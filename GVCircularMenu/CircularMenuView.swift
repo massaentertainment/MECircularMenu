@@ -32,6 +32,7 @@ public class CircularMenuView: UIView {
         super.init(frame: frame)
         
         viewSetup()
+        
     }
     
     override public init(frame: CGRect) {
