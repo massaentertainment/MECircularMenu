@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol CircularMenuDelegate {
+public protocol CircularMenuDelegate : class {
     func circularMenu(_ circularMenu:CircularMenuView, didSelectedButtonAt index:Int)
     func circularMenuDidOpen(_ circularMenu:CircularMenuView)
     func circularMenuWillOpen(_ circularMenu:CircularMenuView)
