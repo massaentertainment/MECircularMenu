@@ -47,7 +47,7 @@ extension CircularMenuView {
                 let button = externalCircle.buttons[i]
                 let specificLocation = touch.location(in: button)
                 if button.touch(at: specificLocation) {
-                    
+                    setActive(buttonIndex: i)
                     break
                 }
             }

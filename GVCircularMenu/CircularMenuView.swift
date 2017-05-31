@@ -42,5 +42,24 @@ public class CircularMenuView: UIView {
     required public init?(coder aDecoder: NSCoder) {
         fatalError("Incorrect constructor (init(coder:)). Must use init(frame:angle:).")
     }
+    
+    public func setActive(buttonIndex index:Int) {
+        if index == activeButtonIndex {
+            return
+        }
+        
+        let previousIndex = activeButtonIndex
+        activeButtonIndex = index
+        delegate?.circularMenu(self, didSelectedButtonAt: index)
+        externalCircle.buttons[previousIndex].iconView.image = dataSource.circularMenu(self, inactiveImageForButtonIndex: previousIndex)
+        externalCircle.buttons[index].iconView.image = dataSource.circularMenu(self, activeImageForButtonIndex: index)
+        
+        let baseAngle = CGFloat(Double.pi / Double(externalCircle.buttons.count))
+        let newRotationAngle = -baseAngle * 2.0 * CGFloat(index) + baseAngle
+        rotationAngle = newRotationAngle
+        UIView.animate(withDuration: 0.35, animations: {
+            self.externalCircle.transform = CGAffineTransform(rotationAngle: newRotationAngle)
+        })
+    }
 
 }
