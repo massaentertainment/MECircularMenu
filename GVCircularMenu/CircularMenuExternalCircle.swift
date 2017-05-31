@@ -100,4 +100,16 @@ public class CircularMenuExternalCircle : UIView {
         return animation
     }
     
+    fileprivate func animateOpening(animated:Bool = true) {
+        let animation = createAnimation(keyPath: "transform.scale", fromValue: 0.0001, toValue: 1.0, duration: animated ? 0.35 : 0.001)
+        self.layer.removeAllAnimations()
+        self.layer.add(animation, forKey: "scaleUp")
+    }
+    
+    fileprivate func animateClosing(animated:Bool = true) {
+        let animation = createAnimation(keyPath: "transform.scale", fromValue: 1.0, toValue: 0.0001, duration: animated ? 0.35 : 0.001)
+        self.layer.removeAllAnimations()
+        self.layer.add(animation, forKey: "scaleDown")
+    }
+    
 }
