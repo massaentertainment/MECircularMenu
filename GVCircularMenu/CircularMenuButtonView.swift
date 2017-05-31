@@ -71,7 +71,7 @@ extension CircularMenuButtonView {
         let iconFrame = CGRect(x: 0, y: 0, width: side, height: side)
         
         iconView = UIImageView(frame: iconFrame)
-        iconView.center = getIconCenterPoint(basePoint: shapeLayer.frame.origin)
+        iconView.center = CGPoint(x: radius / 4 + shapeLayer.frame.origin.x, y: radius / 4 + shapeLayer.frame.origin.y)
         iconView.contentMode = .scaleAspectFit
         iconView.transform = CGAffineTransform(rotationAngle: .pi / 4)
         
