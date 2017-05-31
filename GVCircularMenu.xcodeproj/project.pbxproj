@@ -16,6 +16,7 @@
 		BE293E2E1EDF5B9E0052C06D /* CircularMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2D1EDF5B9E0052C06D /* CircularMenuDelegate.swift */; };
 		BE293E301EDF5D710052C06D /* CircularMenuView+ViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2F1EDF5D710052C06D /* CircularMenuView+ViewSetup.swift */; };
 		BE293E331EDF5ED50052C06D /* CircularMenuExternalCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E321EDF5ED50052C06D /* CircularMenuExternalCircle.swift */; };
+		BE293E351EDF5FC50052C06D /* CircularMenuExternalCircle+ViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E341EDF5FC50052C06D /* CircularMenuExternalCircle+ViewSetup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BE293E2D1EDF5B9E0052C06D /* CircularMenuDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuDelegate.swift; sourceTree = "<group>"; };
 		BE293E2F1EDF5D710052C06D /* CircularMenuView+ViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CircularMenuView+ViewSetup.swift"; sourceTree = "<group>"; };
 		BE293E321EDF5ED50052C06D /* CircularMenuExternalCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuExternalCircle.swift; sourceTree = "<group>"; };
+		BE293E341EDF5FC50052C06D /* CircularMenuExternalCircle+ViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CircularMenuExternalCircle+ViewSetup.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				BE293E321EDF5ED50052C06D /* CircularMenuExternalCircle.swift */,
+				BE293E341EDF5FC50052C06D /* CircularMenuExternalCircle+ViewSetup.swift */,
 			);
 			name = CircularMenuExternalCircle;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				BE293E331EDF5ED50052C06D /* CircularMenuExternalCircle.swift in Sources */,
 				BE293E291EDF5B450052C06D /* CircularMenuView.swift in Sources */,
 				BE293E301EDF5D710052C06D /* CircularMenuView+ViewSetup.swift in Sources */,
+				BE293E351EDF5FC50052C06D /* CircularMenuExternalCircle+ViewSetup.swift in Sources */,
 				BE293DF91EDF3DD20052C06D /* CircularMenuButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

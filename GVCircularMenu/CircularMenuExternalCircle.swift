@@ -10,11 +10,13 @@ import UIKit
 
 public class CircularMenuExternalCircle : UIView {
     
+    //MARK: - Properties
     var isOpen:Bool = true
     var dataSource:CircularMenuDataSource
     var buttons:[CircularMenuButtonView] = []
     var circularMenu:CircularMenuView
     
+    //MARK: - Constructors
     public init(frame: CGRect, dataSource:CircularMenuDataSource, parent: CircularMenuView) {
         self.dataSource = dataSource
         self.circularMenu = parent
