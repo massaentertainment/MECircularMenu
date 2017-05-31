@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CircularMenuButtonView: UIView {
+public class CircularMenuButtonView: UIView {
 
     //MARK: - Properties
     fileprivate var iconView:UIImageView!
@@ -30,11 +30,11 @@ class CircularMenuButtonView: UIView {
         createIcon()
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         fatalError("Incorrect constructor (init(frame:)). Must use init(frame:angle:).")
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("Incorrect constructor (init(coder:)). Must use init(frame:angle:).")
     }
 

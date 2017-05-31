@@ -12,6 +12,8 @@
 		BE293DFB1EDF42680052C06D /* CircularMenuButtonViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DFA1EDF42670052C06D /* CircularMenuButtonViewAppearance.swift */; };
 		BE293DFD1EDF43670052C06D /* CircularMenuConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DFC1EDF43670052C06D /* CircularMenuConstants.swift */; };
 		BE293E291EDF5B450052C06D /* CircularMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E281EDF5B450052C06D /* CircularMenuView.swift */; };
+		BE293E2C1EDF5B850052C06D /* CircularMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2B1EDF5B850052C06D /* CircularMenuDataSource.swift */; };
+		BE293E2E1EDF5B9E0052C06D /* CircularMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2D1EDF5B9E0052C06D /* CircularMenuDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BE293DFA1EDF42670052C06D /* CircularMenuButtonViewAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuButtonViewAppearance.swift; sourceTree = "<group>"; };
 		BE293DFC1EDF43670052C06D /* CircularMenuConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuConstants.swift; sourceTree = "<group>"; };
 		BE293E281EDF5B450052C06D /* CircularMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuView.swift; sourceTree = "<group>"; };
+		BE293E2B1EDF5B850052C06D /* CircularMenuDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuDataSource.swift; sourceTree = "<group>"; };
+		BE293E2D1EDF5B9E0052C06D /* CircularMenuDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		BE293DED1EDF3D1E0052C06D /* GVCircularMenu */ = {
 			isa = PBXGroup;
 			children = (
+				BE293E2A1EDF5B6B0052C06D /* Protocols */,
 				BE293DF61EDF3D900052C06D /* View */,
 				BE293DEE1EDF3D1E0052C06D /* GVCircularMenu.h */,
 				BE293DEF1EDF3D1E0052C06D /* Info.plist */,
@@ -86,6 +91,15 @@
 				BE293E281EDF5B450052C06D /* CircularMenuView.swift */,
 			);
 			name = CircularMenu;
+			sourceTree = "<group>";
+		};
+		BE293E2A1EDF5B6B0052C06D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BE293E2B1EDF5B850052C06D /* CircularMenuDataSource.swift */,
+				BE293E2D1EDF5B9E0052C06D /* CircularMenuDelegate.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE293E2C1EDF5B850052C06D /* CircularMenuDataSource.swift in Sources */,
 				BE293DFD1EDF43670052C06D /* CircularMenuConstants.swift in Sources */,
+				BE293E2E1EDF5B9E0052C06D /* CircularMenuDelegate.swift in Sources */,
 				BE293DFB1EDF42680052C06D /* CircularMenuButtonViewAppearance.swift in Sources */,
 				BE293E291EDF5B450052C06D /* CircularMenuView.swift in Sources */,
 				BE293DF91EDF3DD20052C06D /* CircularMenuButtonView.swift in Sources */,

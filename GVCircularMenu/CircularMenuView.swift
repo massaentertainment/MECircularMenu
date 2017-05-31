@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CircularMenuView: UIView {
+public class CircularMenuView: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.
