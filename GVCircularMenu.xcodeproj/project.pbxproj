@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BE293DF01EDF3D1E0052C06D /* GVCircularMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = BE293DEE1EDF3D1E0052C06D /* GVCircularMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE293DF91EDF3DD20052C06D /* CircularMenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DF81EDF3DD20052C06D /* CircularMenuButtonView.swift */; };
+		BE293DFB1EDF42680052C06D /* CircularMenuButtonViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DFA1EDF42670052C06D /* CircularMenuButtonViewAppearance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		BE293DEE1EDF3D1E0052C06D /* GVCircularMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GVCircularMenu.h; sourceTree = "<group>"; };
 		BE293DEF1EDF3D1E0052C06D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE293DF81EDF3DD20052C06D /* CircularMenuButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuButtonView.swift; sourceTree = "<group>"; };
+		BE293DFA1EDF42670052C06D /* CircularMenuButtonViewAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuButtonViewAppearance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				BE293DF81EDF3DD20052C06D /* CircularMenuButtonView.swift */,
+				BE293DFA1EDF42670052C06D /* CircularMenuButtonViewAppearance.swift */,
 			);
 			name = CircularMenuButton;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE293DFB1EDF42680052C06D /* CircularMenuButtonViewAppearance.swift in Sources */,
 				BE293DF91EDF3DD20052C06D /* CircularMenuButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

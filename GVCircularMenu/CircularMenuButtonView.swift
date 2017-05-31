@@ -11,13 +11,14 @@ import UIKit
 class CircularMenuButtonView: UIView {
 
     //MARK: - Properties
-    fileprivate var angle:CGFloat
     fileprivate var iconView:UIImageView!
     fileprivate var shapeLayer:CAShapeLayer!
     
+    var properties:CircularMenuButtonViewAppearance
+    
     //MARK: - Constructors
-    public init(frame: CGRect, angle: CGFloat) {
-        self.angle = angle
+    public init(frame: CGRect, properties:[String:Any]) {
+        self.properties = CircularMenuButtonViewAppearance(properties: properties)
         
         super.init(frame: frame)
     }
@@ -30,4 +31,12 @@ class CircularMenuButtonView: UIView {
         fatalError("Incorrect constructor (init(coder:)). Must use init(frame:angle:).")
     }
 
+}
+
+extension CircularMenuButtonView {
+    
+    fileprivate func createShape(){
+        
+    }
+    
 }
