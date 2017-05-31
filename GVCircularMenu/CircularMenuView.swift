@@ -9,13 +9,23 @@
 import UIKit
 
 public class CircularMenuView: UIView {
+    
+    weak var delegate:CircularMenuDelegate?
+    var dataSource:CircularMenuDataSource
+    
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    //MARK: - Constructors
+    public init(frame: CGRect, dataSource: CircularMenuDataSource) {
+        self.dataSource = dataSource
+        super.init(frame: frame)
     }
-    */
+    
+    override public init(frame: CGRect) {
+        fatalError("Incorrect constructor (init(frame:)). Must use init(frame:angle:).")
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("Incorrect constructor (init(coder:)). Must use init(frame:angle:).")
+    }
 
 }
