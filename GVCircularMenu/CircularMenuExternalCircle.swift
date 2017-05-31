@@ -53,7 +53,30 @@ public class CircularMenuExternalCircle : UIView {
     }
     
     func createSeparators() {
+        let numberOfButtons = dataSource.numberOfButtons(in: circularMenu)
         
+        for i in 0..<numberOfButtons {
+            let rotationAngle = CGFloat(i) * CGFloat((2.0 * Double.pi) / Double(numberOfButtons))
+            let rect = CGRect(x: 0, y: frame.size.height / 2 - 0.5, width: frame.size.width, height: 2)
+            let separator = UIView(frame: rect)
+            separator.layer.cornerRadius = 1
+            let gradient = CAGradientLayer()
+            gradient.frame = CGRect(x: rect.width / 2 + rect.width / 5, y: 0, width: 3 * rect.width / 10, height: 1)
+            gradient.cornerRadius = separator.layer.cornerRadius
+            gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
+            gradient.endPoint = CGPoint(x: 1.0, y: 0.5)
+            
+            gradient.colors = [
+                UIColor(colorLiteralRed: 0.8392, green: 0.8431, blue: 0.8471, alpha: 1.0).cgColor,
+                UIColor(colorLiteralRed: 0.8392, green: 0.8431, blue: 0.8471, alpha: 0.0).cgColor
+            ]
+            
+            
+            separator.transform = CGAffineTransform(rotationAngle: rotationAngle)
+            
+            separator.layer.addSublayer(gradient)
+            addSubview(separator)
+        }
     }
     
 }
