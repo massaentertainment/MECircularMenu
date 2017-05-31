@@ -12,6 +12,7 @@ extension CircularMenuView {
     
     func viewSetup(){
         createCenter()
+        createExternalCircle()
     }
     
     func createCenter(){
@@ -26,4 +27,10 @@ extension CircularMenuView {
         self.addSubview(centerCircle)
     }
     
+    func createExternalCircle() {
+        externalCircle = CircularMenuExternalCircle(frame: frame, dataSource: dataSource, parent: self)
+        
+        externalCircle.transform = CGAffineTransform(rotationAngle: rotationAngle)
+        externalCircle.buttons[activeButtonIndex].iconView.image = dataSource.circularMenu(self, activeImageForButtonIndex: activeButtonIndex)
+    }
 }

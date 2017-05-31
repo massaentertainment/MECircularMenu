@@ -16,7 +16,15 @@ public class CircularMenuView: UIView {
     
     var centerCircle:UIView!
     var centerCircleIcon:UIImageView!
+    var externalCircle:CircularMenuExternalCircle!
     
+    private(set) var activeButtonIndex:Int = 0
+    var lastTouchPoint:CGPoint = CGPoint.zero
+    var rotationAngle:CGFloat = 0.0
+    
+    var isOpened:Bool {
+        return externalCircle.isOpen
+    }
 
     //MARK: - Constructors
     public init(frame: CGRect, dataSource: CircularMenuDataSource) {
