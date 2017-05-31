@@ -10,8 +10,16 @@ import UIKit
 
 struct CircularMenuButtonViewAppearance  {
 
+    var angle:CGFloat
+    var backgroundColor:UIColor
+    var strokeColor:UIColor
+    var fillColor:UIColor
+    
     init(properties:[String:Any]){
-        
+        angle = properties[kCircularMenuButtonAngle] as! CGFloat
+        backgroundColor = (properties[kCircularMenuButtonBackgroundColor] as? UIColor) ?? .white
+        strokeColor = (properties[kCircularMenuButtonStrokeColor] as? UIColor) ?? .white
+        fillColor = (properties[kCircularMenuButtonFillColor] as? UIColor) ?? .white
     }
 
 }
