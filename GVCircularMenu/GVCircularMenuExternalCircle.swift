@@ -1,5 +1,5 @@
 //
-//  CircularMenuExternalCircle.swift
+//  GVCircularMenuExternalCircle.swift
 //  GVCircularMenu
 //
 //  Created by Gabriel Bezerra Valério on 31/05/17.
@@ -8,16 +8,16 @@
 
 import UIKit
 
-public class CircularMenuExternalCircle : UIView {
+public class GVCircularMenuExternalCircle : UIView {
     
     //MARK: - Properties
     var isOpen:Bool = true
-    var dataSource:CircularMenuDataSource
-    var buttons:[CircularMenuButtonView] = []
-    var circularMenu:CircularMenuView
+    var dataSource:GVCircularMenuDataSource
+    var buttons:[GVCircularMenuButtonView] = []
+    var circularMenu:GVCircularMenuView
     
     //MARK: - Constructors
-    public init(frame: CGRect, dataSource:CircularMenuDataSource, parent: CircularMenuView) {
+    public init(frame: CGRect, dataSource:GVCircularMenuDataSource, parent: GVCircularMenuView) {
         self.dataSource = dataSource
         self.circularMenu = parent
         super.init(frame: frame)
@@ -43,7 +43,7 @@ public class CircularMenuExternalCircle : UIView {
         for i in 0..<numberOfButtons {
             let angle = CGFloat((2.0 * Double.pi) / Double(numberOfButtons))
             let rotationAngle = CGFloat(i) * angle
-            let button = CircularMenuButtonView(frame: CGRect(origin: CGPoint.zero, size: frame.size), properties: [kCircularMenuButtonAngle: angle])
+            let button = GVCircularMenuButtonView(frame: CGRect(origin: CGPoint.zero, size: frame.size), properties: [kCircularMenuButtonAngle: angle])
             
             button.transform = CGAffineTransform(rotationAngle: rotationAngle)
             button.iconView.image = dataSource.circularMenu(circularMenu, inactiveImageForButtonIndex: i)

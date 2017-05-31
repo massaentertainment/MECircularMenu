@@ -1,5 +1,5 @@
 //
-//  CircularMenuButtonView.swift
+//  GVCircularMenuButtonView.swift
 //  GVCircularMenu
 //
 //  Created by Gabriel Bezerra Valério on 31/05/17.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-public class CircularMenuButtonView: UIView {
+public class GVCircularMenuButtonView: UIView {
 
     //MARK: - Properties
     var iconView:UIImageView!
     fileprivate var shapeLayer:CAShapeLayer!
     
-    let properties:CircularMenuButtonViewAppearance
+    let properties:GVCircularMenuButtonViewAppearance
     
     var radius:CGFloat {
         return frame.width / 2
@@ -22,7 +22,7 @@ public class CircularMenuButtonView: UIView {
     
     //MARK: - Constructors
     public init(frame: CGRect, properties:[String:Any]) {
-        self.properties = CircularMenuButtonViewAppearance(properties: properties)
+        self.properties = GVCircularMenuButtonViewAppearance(properties: properties)
         
         super.init(frame: frame)
         
@@ -44,7 +44,7 @@ public class CircularMenuButtonView: UIView {
 
 }
 
-extension CircularMenuButtonView {
+extension GVCircularMenuButtonView {
     
     fileprivate func createShape(){
         let path = CGMutablePath()

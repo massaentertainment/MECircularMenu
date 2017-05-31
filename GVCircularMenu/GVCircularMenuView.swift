@@ -1,5 +1,5 @@
 //
-//  CircularMenuView.swift
+//  GVCircularMenuView.swift
 //  GVCircularMenu
 //
 //  Created by Gabriel Bezerra Valério on 31/05/17.
@@ -8,15 +8,15 @@
 
 import UIKit
 
-public class CircularMenuView: UIView {
+public class GVCircularMenuView: UIView {
     
     //MARK: - Properties
-    weak var delegate:CircularMenuDelegate?
-    var dataSource:CircularMenuDataSource
+    weak var delegate:GVCircularMenuDelegate?
+    var dataSource:GVCircularMenuDataSource
     
     var centerCircle:UIView!
     var centerCircleIcon:UIImageView!
-    var externalCircle:CircularMenuExternalCircle!
+    var externalCircle:GVCircularMenuExternalCircle!
     
     private(set) var activeButtonIndex:Int = 0
     var lastTouchPoint:CGPoint = CGPoint.zero
@@ -27,7 +27,7 @@ public class CircularMenuView: UIView {
     }
 
     //MARK: - Constructors
-    public init(frame: CGRect, dataSource: CircularMenuDataSource) {
+    public init(frame: CGRect, dataSource: GVCircularMenuDataSource) {
         self.dataSource = dataSource
         super.init(frame: frame)
         

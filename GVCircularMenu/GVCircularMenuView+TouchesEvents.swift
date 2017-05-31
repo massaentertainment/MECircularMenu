@@ -1,5 +1,5 @@
 //
-//  CircularMenuView+TouchesEvents.swift
+//  GVCircularMenuView+TouchesEvents.swift
 //  GVCircularMenu
 //
 //  Created by Gabriel Bezerra Valério on 31/05/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension CircularMenuView {
+extension GVCircularMenuView {
     
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }

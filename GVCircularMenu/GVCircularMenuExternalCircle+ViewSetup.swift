@@ -1,5 +1,5 @@
 //
-//  CircularMenuExternalCircle+ViewSetup.swift
+//  GVCircularMenuExternalCircle+ViewSetup.swift
 //  GVCircularMenu
 //
 //  Created by Gabriel Bezerra Valério on 31/05/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension CircularMenuExternalCircle {
+extension GVCircularMenuExternalCircle {
     
     func viewSetup() {
         selfSetup()

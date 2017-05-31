@@ -1,5 +1,5 @@
 //
-//  CircularMenuButtonViewAppearance.swift
+//  GVCircularMenuButtonViewAppearance.swift
 //  GVCircularMenu
 //
 //  Created by Gabriel Bezerra Valério on 31/05/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct CircularMenuButtonViewAppearance  {
+struct GVCircularMenuButtonViewAppearance  {
 
     var angle:CGFloat
     var backgroundColor:UIColor

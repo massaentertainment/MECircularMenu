@@ -1,5 +1,5 @@
 //
-//  CircularMenuView+ViewSetup.swift
+//  GVCircularMenuView+ViewSetup.swift
 //  GVCircularMenu
 //
 //  Created by Gabriel Bezerra Valério on 31/05/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension CircularMenuView {
+extension GVCircularMenuView {
     
     func viewSetup(){
         createCenter()
@@ -28,7 +28,7 @@ extension CircularMenuView {
     }
     
     func createExternalCircle() {
-        externalCircle = CircularMenuExternalCircle(frame: frame, dataSource: dataSource, parent: self)
+        externalCircle = GVCircularMenuExternalCircle(frame: frame, dataSource: dataSource, parent: self)
         
         rotationAngle += CGFloat(Double.pi / Double(externalCircle.buttons.count))
         externalCircle.transform = CGAffineTransform(rotationAngle: rotationAngle)

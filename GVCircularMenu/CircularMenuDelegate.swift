@@ -1,5 +1,5 @@
 //
-//  CircularMenuDelegate.swift
+//  GVCircularMenuDelegate.swift
 //  GVCircularMenu
 //
 //  Created by Gabriel Bezerra Valério on 31/05/17.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-public protocol CircularMenuDelegate : class {
-    func circularMenu(_ circularMenu:CircularMenuView, didSelectedButtonAt index:Int)
-    func circularMenuDidOpen(_ circularMenu:CircularMenuView)
-    func circularMenuWillOpen(_ circularMenu:CircularMenuView)
-    func circularMenuDidClose(_ circularMenu:CircularMenuView)
-    func circularMenuWillClose(_ circularMenu:CircularMenuView)
+public protocol GVCircularMenuDelegate : class {
+    func circularMenu(_ circularMenu:GVCircularMenuView, didSelectedButtonAt index:Int)
+    func circularMenuDidOpen(_ circularMenu:GVCircularMenuView)
+    func circularMenuWillOpen(_ circularMenu:GVCircularMenuView)
+    func circularMenuDidClose(_ circularMenu:GVCircularMenuView)
+    func circularMenuWillClose(_ circularMenu:GVCircularMenuView)
 }

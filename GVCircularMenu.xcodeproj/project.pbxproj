@@ -8,32 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		BE293DF01EDF3D1E0052C06D /* GVCircularMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = BE293DEE1EDF3D1E0052C06D /* GVCircularMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE293DF91EDF3DD20052C06D /* CircularMenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DF81EDF3DD20052C06D /* CircularMenuButtonView.swift */; };
-		BE293DFB1EDF42680052C06D /* CircularMenuButtonViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DFA1EDF42670052C06D /* CircularMenuButtonViewAppearance.swift */; };
+		BE293DF91EDF3DD20052C06D /* GVCircularMenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DF81EDF3DD20052C06D /* GVCircularMenuButtonView.swift */; };
+		BE293DFB1EDF42680052C06D /* GVCircularMenuButtonViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DFA1EDF42670052C06D /* GVCircularMenuButtonViewAppearance.swift */; };
 		BE293DFD1EDF43670052C06D /* CircularMenuConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DFC1EDF43670052C06D /* CircularMenuConstants.swift */; };
-		BE293E291EDF5B450052C06D /* CircularMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E281EDF5B450052C06D /* CircularMenuView.swift */; };
+		BE293E291EDF5B450052C06D /* GVCircularMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E281EDF5B450052C06D /* GVCircularMenuView.swift */; };
 		BE293E2C1EDF5B850052C06D /* CircularMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2B1EDF5B850052C06D /* CircularMenuDataSource.swift */; };
 		BE293E2E1EDF5B9E0052C06D /* CircularMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2D1EDF5B9E0052C06D /* CircularMenuDelegate.swift */; };
-		BE293E301EDF5D710052C06D /* CircularMenuView+ViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2F1EDF5D710052C06D /* CircularMenuView+ViewSetup.swift */; };
-		BE293E331EDF5ED50052C06D /* CircularMenuExternalCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E321EDF5ED50052C06D /* CircularMenuExternalCircle.swift */; };
-		BE293E351EDF5FC50052C06D /* CircularMenuExternalCircle+ViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E341EDF5FC50052C06D /* CircularMenuExternalCircle+ViewSetup.swift */; };
-		BE293E371EDF7F020052C06D /* CircularMenuView+TouchesEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E361EDF7F020052C06D /* CircularMenuView+TouchesEvents.swift */; };
+		BE293E301EDF5D710052C06D /* GVCircularMenuView+ViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2F1EDF5D710052C06D /* GVCircularMenuView+ViewSetup.swift */; };
+		BE293E331EDF5ED50052C06D /* GVCircularMenuExternalCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E321EDF5ED50052C06D /* GVCircularMenuExternalCircle.swift */; };
+		BE293E351EDF5FC50052C06D /* GVCircularMenuExternalCircle+ViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E341EDF5FC50052C06D /* GVCircularMenuExternalCircle+ViewSetup.swift */; };
+		BE293E371EDF7F020052C06D /* GVCircularMenuView+TouchesEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E361EDF7F020052C06D /* GVCircularMenuView+TouchesEvents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE293DEB1EDF3D1E0052C06D /* GVCircularMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GVCircularMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE293DEE1EDF3D1E0052C06D /* GVCircularMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GVCircularMenu.h; sourceTree = "<group>"; };
 		BE293DEF1EDF3D1E0052C06D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE293DF81EDF3DD20052C06D /* CircularMenuButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuButtonView.swift; sourceTree = "<group>"; };
-		BE293DFA1EDF42670052C06D /* CircularMenuButtonViewAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuButtonViewAppearance.swift; sourceTree = "<group>"; };
+		BE293DF81EDF3DD20052C06D /* GVCircularMenuButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GVCircularMenuButtonView.swift; sourceTree = "<group>"; };
+		BE293DFA1EDF42670052C06D /* GVCircularMenuButtonViewAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GVCircularMenuButtonViewAppearance.swift; sourceTree = "<group>"; };
 		BE293DFC1EDF43670052C06D /* CircularMenuConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuConstants.swift; sourceTree = "<group>"; };
-		BE293E281EDF5B450052C06D /* CircularMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuView.swift; sourceTree = "<group>"; };
-		BE293E2B1EDF5B850052C06D /* CircularMenuDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuDataSource.swift; sourceTree = "<group>"; };
-		BE293E2D1EDF5B9E0052C06D /* CircularMenuDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuDelegate.swift; sourceTree = "<group>"; };
-		BE293E2F1EDF5D710052C06D /* CircularMenuView+ViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CircularMenuView+ViewSetup.swift"; sourceTree = "<group>"; };
-		BE293E321EDF5ED50052C06D /* CircularMenuExternalCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuExternalCircle.swift; sourceTree = "<group>"; };
-		BE293E341EDF5FC50052C06D /* CircularMenuExternalCircle+ViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CircularMenuExternalCircle+ViewSetup.swift"; sourceTree = "<group>"; };
-		BE293E361EDF7F020052C06D /* CircularMenuView+TouchesEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CircularMenuView+TouchesEvents.swift"; sourceTree = "<group>"; };
+		BE293E281EDF5B450052C06D /* GVCircularMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = GVCircularMenuView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BE293E2B1EDF5B850052C06D /* CircularMenuDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CircularMenuDataSource.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BE293E2D1EDF5B9E0052C06D /* CircularMenuDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CircularMenuDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BE293E2F1EDF5D710052C06D /* GVCircularMenuView+ViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "GVCircularMenuView+ViewSetup.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BE293E321EDF5ED50052C06D /* GVCircularMenuExternalCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = GVCircularMenuExternalCircle.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BE293E341EDF5FC50052C06D /* GVCircularMenuExternalCircle+ViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GVCircularMenuExternalCircle+ViewSetup.swift"; sourceTree = "<group>"; };
+		BE293E361EDF7F020052C06D /* GVCircularMenuView+TouchesEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "GVCircularMenuView+TouchesEvents.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,8 @@
 		BE293DF71EDF3DA50052C06D /* CircularMenuButton */ = {
 			isa = PBXGroup;
 			children = (
-				BE293DF81EDF3DD20052C06D /* CircularMenuButtonView.swift */,
-				BE293DFA1EDF42670052C06D /* CircularMenuButtonViewAppearance.swift */,
+				BE293DF81EDF3DD20052C06D /* GVCircularMenuButtonView.swift */,
+				BE293DFA1EDF42670052C06D /* GVCircularMenuButtonViewAppearance.swift */,
 			);
 			name = CircularMenuButton;
 			sourceTree = "<group>";
@@ -97,9 +97,9 @@
 		BE293E271EDF5B180052C06D /* CircularMenu */ = {
 			isa = PBXGroup;
 			children = (
-				BE293E281EDF5B450052C06D /* CircularMenuView.swift */,
-				BE293E2F1EDF5D710052C06D /* CircularMenuView+ViewSetup.swift */,
-				BE293E361EDF7F020052C06D /* CircularMenuView+TouchesEvents.swift */,
+				BE293E281EDF5B450052C06D /* GVCircularMenuView.swift */,
+				BE293E2F1EDF5D710052C06D /* GVCircularMenuView+ViewSetup.swift */,
+				BE293E361EDF7F020052C06D /* GVCircularMenuView+TouchesEvents.swift */,
 			);
 			name = CircularMenu;
 			sourceTree = "<group>";
@@ -116,8 +116,8 @@
 		BE293E311EDF5EB30052C06D /* CircularMenuExternalCircle */ = {
 			isa = PBXGroup;
 			children = (
-				BE293E321EDF5ED50052C06D /* CircularMenuExternalCircle.swift */,
-				BE293E341EDF5FC50052C06D /* CircularMenuExternalCircle+ViewSetup.swift */,
+				BE293E321EDF5ED50052C06D /* GVCircularMenuExternalCircle.swift */,
+				BE293E341EDF5FC50052C06D /* GVCircularMenuExternalCircle+ViewSetup.swift */,
 			);
 			name = CircularMenuExternalCircle;
 			sourceTree = "<group>";
@@ -206,13 +206,13 @@
 				BE293E2C1EDF5B850052C06D /* CircularMenuDataSource.swift in Sources */,
 				BE293DFD1EDF43670052C06D /* CircularMenuConstants.swift in Sources */,
 				BE293E2E1EDF5B9E0052C06D /* CircularMenuDelegate.swift in Sources */,
-				BE293E371EDF7F020052C06D /* CircularMenuView+TouchesEvents.swift in Sources */,
-				BE293DFB1EDF42680052C06D /* CircularMenuButtonViewAppearance.swift in Sources */,
-				BE293E331EDF5ED50052C06D /* CircularMenuExternalCircle.swift in Sources */,
-				BE293E291EDF5B450052C06D /* CircularMenuView.swift in Sources */,
-				BE293E301EDF5D710052C06D /* CircularMenuView+ViewSetup.swift in Sources */,
-				BE293E351EDF5FC50052C06D /* CircularMenuExternalCircle+ViewSetup.swift in Sources */,
-				BE293DF91EDF3DD20052C06D /* CircularMenuButtonView.swift in Sources */,
+				BE293E371EDF7F020052C06D /* GVCircularMenuView+TouchesEvents.swift in Sources */,
+				BE293DFB1EDF42680052C06D /* GVCircularMenuButtonViewAppearance.swift in Sources */,
+				BE293E331EDF5ED50052C06D /* GVCircularMenuExternalCircle.swift in Sources */,
+				BE293E291EDF5B450052C06D /* GVCircularMenuView.swift in Sources */,
+				BE293E301EDF5D710052C06D /* GVCircularMenuView+ViewSetup.swift in Sources */,
+				BE293E351EDF5FC50052C06D /* GVCircularMenuExternalCircle+ViewSetup.swift in Sources */,
+				BE293DF91EDF3DD20052C06D /* GVCircularMenuButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
