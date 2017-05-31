@@ -10,14 +10,20 @@ import UIKit
 
 public class CircularMenuView: UIView {
     
+    //MARK: - Properties
     weak var delegate:CircularMenuDelegate?
     var dataSource:CircularMenuDataSource
+    
+    var centerCircle:UIView!
+    var centerCircleIcon:UIImageView!
     
 
     //MARK: - Constructors
     public init(frame: CGRect, dataSource: CircularMenuDataSource) {
         self.dataSource = dataSource
         super.init(frame: frame)
+        
+        viewSetup()
     }
     
     override public init(frame: CGRect) {

@@ -14,6 +14,7 @@
 		BE293E291EDF5B450052C06D /* CircularMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E281EDF5B450052C06D /* CircularMenuView.swift */; };
 		BE293E2C1EDF5B850052C06D /* CircularMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2B1EDF5B850052C06D /* CircularMenuDataSource.swift */; };
 		BE293E2E1EDF5B9E0052C06D /* CircularMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2D1EDF5B9E0052C06D /* CircularMenuDelegate.swift */; };
+		BE293E301EDF5D710052C06D /* CircularMenuView+ViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2F1EDF5D710052C06D /* CircularMenuView+ViewSetup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BE293E281EDF5B450052C06D /* CircularMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuView.swift; sourceTree = "<group>"; };
 		BE293E2B1EDF5B850052C06D /* CircularMenuDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuDataSource.swift; sourceTree = "<group>"; };
 		BE293E2D1EDF5B9E0052C06D /* CircularMenuDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuDelegate.swift; sourceTree = "<group>"; };
+		BE293E2F1EDF5D710052C06D /* CircularMenuView+ViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CircularMenuView+ViewSetup.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				BE293E281EDF5B450052C06D /* CircularMenuView.swift */,
+				BE293E2F1EDF5D710052C06D /* CircularMenuView+ViewSetup.swift */,
 			);
 			name = CircularMenu;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				BE293E2E1EDF5B9E0052C06D /* CircularMenuDelegate.swift in Sources */,
 				BE293DFB1EDF42680052C06D /* CircularMenuButtonViewAppearance.swift in Sources */,
 				BE293E291EDF5B450052C06D /* CircularMenuView.swift in Sources */,
+				BE293E301EDF5D710052C06D /* CircularMenuView+ViewSetup.swift in Sources */,
 				BE293DF91EDF3DD20052C06D /* CircularMenuButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
