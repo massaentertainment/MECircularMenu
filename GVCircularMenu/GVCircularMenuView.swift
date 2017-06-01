@@ -52,10 +52,13 @@ public class GVCircularMenuView: UIView {
         activeButtonIndex = index
         delegate?.circularMenu?(self, didSelectedButtonAt: index)
         externalCircle.buttons[previousIndex].iconView.image = dataSource.circularMenu?(self, inactiveImageForButtonIndex: previousIndex)
-        externalCircle.buttons[index].iconView.image = dataSource.circularMenu?(self, activeImageForButtonIndex: index)
         
-        let baseAngle = CGFloat(Double.pi / Double(externalCircle.buttons.count))
-        let newRotationAngle = -baseAngle * 2.0 * CGFloat(index) + baseAngle
+        let activeButton = externalCircle.buttons[index]
+        activeButton.iconView.image = dataSource.circularMenu?(self, activeImageForButtonIndex: index)
+        
+        let baseAngle = activeButton.properties.angle
+        let indexAngle = baseAngle * CGFloat(index) + baseAngle / 2
+        let newRotationAngle:CGFloat = .pi / 2 - indexAngle
         rotationAngle = newRotationAngle
         UIView.animate(withDuration: 0.35, animations: {
             self.externalCircle.transform = CGAffineTransform(rotationAngle: newRotationAngle)
