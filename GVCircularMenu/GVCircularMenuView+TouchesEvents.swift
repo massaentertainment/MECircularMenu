@@ -35,10 +35,12 @@ extension GVCircularMenuView {
         if centerCircle.frame.contains(location){
             if isOpened {
                 delegate?.circularMenuWillClose(self)
+                centerCircleIcon.image = dataSource.closedImageForCenterCircle(in: self)
                 externalCircle.setOpen(!isOpened)
                 delegate?.circularMenuDidClose(self)
             } else {
                 delegate?.circularMenuWillOpen(self)
+                centerCircleIcon.image = dataSource.openedImageForCenterCircle(in: self)
                 externalCircle.setOpen(!isOpened)
                 delegate?.circularMenuDidOpen(self)
             }

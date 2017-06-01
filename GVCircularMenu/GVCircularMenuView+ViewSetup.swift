@@ -24,6 +24,7 @@ extension GVCircularMenuView {
         let iconSide = centerCircle.frame.width / 2
         centerCircleIcon = UIImageView(frame: CGRect(x: iconSide/2, y: iconSide/2, width: iconSide, height: iconSide))
         centerCircleIcon.contentMode = .scaleAspectFit
+        centerCircleIcon.image = dataSource.openedImageForCenterCircle(in: self)
         
         self.addSubview(centerCircle)
     }
