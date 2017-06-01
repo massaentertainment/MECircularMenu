@@ -37,27 +37,31 @@ public class GVCircularMenuExternalCircle : UIView {
     }
     
     func createButtons() {
-        let numberOfButtons = dataSource.numberOfButtons(in: circularMenu)
+        let numberOfButtons = dataSource.numberOfButtons?(in: circularMenu) ?? 1
+        
+        guard numberOfButtons > 0 else {
+            fatalError("The numberOfButtons must be greater than or equals 1.")
+        }
         
         //creating buttons
         for i in 0..<numberOfButtons {
             let angle = CGFloat((2.0 * Double.pi) / Double(numberOfButtons))
             let rotationAngle = CGFloat(i) * angle
             
-            var properties = dataSource.circularMenu(circularMenu, propertiesForButtonIndex: i)
+            var properties = dataSource.circularMenu?(circularMenu, propertiesForButtonIndex: i) ?? [:]
             properties[kCircularMenuButtonAngle] = angle
             
             let button = GVCircularMenuButtonView(frame: CGRect(origin: CGPoint.zero, size: frame.size), properties: properties)
             
             button.transform = CGAffineTransform(rotationAngle: rotationAngle)
-            button.iconView.image = dataSource.circularMenu(circularMenu, inactiveImageForButtonIndex: i)
+            button.iconView.image = dataSource.circularMenu?(circularMenu, inactiveImageForButtonIndex: i)
             buttons.append(button)
             addSubview(button)
         }
     }
     
     func createSeparators() {
-        let numberOfButtons = dataSource.numberOfButtons(in: circularMenu)
+        let numberOfButtons = dataSource.numberOfButtons?(in: circularMenu) ?? 1
         
         for i in 0..<numberOfButtons {
             let rotationAngle = CGFloat(i) * CGFloat((2.0 * Double.pi) / Double(numberOfButtons))

@@ -8,10 +8,10 @@
 
 import UIKit
 
-public protocol GVCircularMenuDelegate : class {
-    func circularMenu(_ circularMenu:GVCircularMenuView, didSelectedButtonAt index:Int)
-    func circularMenuDidOpen(_ circularMenu:GVCircularMenuView)
-    func circularMenuWillOpen(_ circularMenu:GVCircularMenuView)
-    func circularMenuDidClose(_ circularMenu:GVCircularMenuView)
-    func circularMenuWillClose(_ circularMenu:GVCircularMenuView)
+@objc public protocol GVCircularMenuDelegate : class {
+    @objc optional func circularMenu(_ circularMenu:GVCircularMenuView, didSelectedButtonAt index:Int)
+    @objc optional func circularMenuDidOpen(_ circularMenu:GVCircularMenuView)
+    @objc optional func circularMenuWillOpen(_ circularMenu:GVCircularMenuView)
+    @objc optional func circularMenuDidClose(_ circularMenu:GVCircularMenuView)
+    @objc optional func circularMenuWillClose(_ circularMenu:GVCircularMenuView)
 }

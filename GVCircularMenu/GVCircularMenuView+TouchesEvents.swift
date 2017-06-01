@@ -34,15 +34,15 @@ extension GVCircularMenuView {
         let location = touch.location(in: self)
         if centerCircle.frame.contains(location){
             if isOpened {
-                delegate?.circularMenuWillClose(self)
-                centerCircleIcon.image = dataSource.closedImageForCenterCircle(in: self)
+                delegate?.circularMenuWillClose?(self)
+                centerCircleIcon.image = dataSource.closedImageForCenterCircle?(in: self)
                 externalCircle.setOpen(!isOpened)
-                delegate?.circularMenuDidClose(self)
+                delegate?.circularMenuDidClose?(self)
             } else {
-                delegate?.circularMenuWillOpen(self)
-                centerCircleIcon.image = dataSource.openedImageForCenterCircle(in: self)
+                delegate?.circularMenuWillOpen?(self)
+                centerCircleIcon.image = dataSource.openedImageForCenterCircle?(in: self)
                 externalCircle.setOpen(!isOpened)
-                delegate?.circularMenuDidOpen(self)
+                delegate?.circularMenuDidOpen?(self)
             }
         } else {
             guard isOpened else { return }
