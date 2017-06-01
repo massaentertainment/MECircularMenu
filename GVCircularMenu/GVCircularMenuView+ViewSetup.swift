@@ -11,13 +11,14 @@ import UIKit
 extension GVCircularMenuView {
     
     func viewSetup(){
-        createCenter()
         createExternalCircle()
+        createCenter()
     }
     
     func createCenter(){
         let width = frame.width / 3.5
-        centerCircle = UIView(frame: CGRect(x: center.x - width / 2, y: center.y - width / 2, width: width, height: width))
+        centerCircle = UIView(frame: CGRect(x: (frame.width - width) / 2, y: (frame.height - width) / 2, width: width, height: width))
+        //centerCircle.center = center
         centerCircle.layer.cornerRadius = width / 2 //sets it circular
         
         let iconSide = centerCircle.frame.width / 2
@@ -28,10 +29,12 @@ extension GVCircularMenuView {
     }
     
     func createExternalCircle() {
-        externalCircle = GVCircularMenuExternalCircle(frame: frame, dataSource: dataSource, parent: self)
+        externalCircle = GVCircularMenuExternalCircle(frame: CGRect(origin: .zero, size: frame.size), dataSource: dataSource, parent: self)
         
         rotationAngle += CGFloat(Double.pi / Double(externalCircle.buttons.count))
         externalCircle.transform = CGAffineTransform(rotationAngle: rotationAngle)
         externalCircle.buttons[activeButtonIndex].iconView.image = dataSource.circularMenu(self, activeImageForButtonIndex: activeButtonIndex)
+        
+        self.addSubview(externalCircle)
     }
 }
