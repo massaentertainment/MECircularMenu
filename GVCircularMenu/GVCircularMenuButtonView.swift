@@ -75,7 +75,7 @@ extension GVCircularMenuButtonView {
         iconView = UIImageView(frame: iconFrame)
         iconView.center = getIconCenterPoint(basePoint: shapeLayer.frame.origin)
         iconView.contentMode = .scaleAspectFit
-        iconView.transform = CGAffineTransform(rotationAngle: .pi / 4)
+        iconView.transform = CGAffineTransform(rotationAngle: -((.pi - properties.angle) / 2))
         
         self.addSubview(iconView)
     }
