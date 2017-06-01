@@ -11,18 +11,18 @@ import UIKit
 public class GVCircularMenuView: UIView {
     
     //MARK: - Properties
-    weak var delegate:GVCircularMenuDelegate?
-    var dataSource:GVCircularMenuDataSource
+    public weak var delegate:GVCircularMenuDelegate?
+    public var dataSource:GVCircularMenuDataSource
     
-    var centerCircle:UIView!
-    var centerCircleIcon:UIImageView!
-    var externalCircle:GVCircularMenuExternalCircle!
+    public var centerCircle:UIView!
+    public var centerCircleIcon:UIImageView!
+    public var externalCircle:GVCircularMenuExternalCircle!
     
-    private(set) var activeButtonIndex:Int = 0
+    public private(set) var activeButtonIndex:Int = 0
     var lastTouchPoint:CGPoint = CGPoint.zero
     var rotationAngle:CGFloat = 0.0
     
-    var isOpened:Bool {
+    public var isOpened:Bool {
         return externalCircle.isOpen
     }
 

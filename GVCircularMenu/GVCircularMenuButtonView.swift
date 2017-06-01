@@ -14,7 +14,7 @@ public class GVCircularMenuButtonView: UIView {
     var iconView:UIImageView!
     fileprivate var shapeLayer:CAShapeLayer!
     
-    let properties:GVCircularMenuButtonViewAppearance
+    public let properties:GVCircularMenuButtonViewAppearance
     
     var radius:CGFloat {
         return frame.width / 2

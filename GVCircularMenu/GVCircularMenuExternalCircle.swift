@@ -11,10 +11,10 @@ import UIKit
 public class GVCircularMenuExternalCircle : UIView {
     
     //MARK: - Properties
-    var isOpen:Bool = true
-    var dataSource:GVCircularMenuDataSource
-    var buttons:[GVCircularMenuButtonView] = []
-    var circularMenu:GVCircularMenuView
+    public var isOpen:Bool = true
+    public var dataSource:GVCircularMenuDataSource
+    public var buttons:[GVCircularMenuButtonView] = []
+    public var circularMenu:GVCircularMenuView
     
     //MARK: - Constructors
     public init(frame: CGRect, dataSource:GVCircularMenuDataSource, parent: GVCircularMenuView) {
