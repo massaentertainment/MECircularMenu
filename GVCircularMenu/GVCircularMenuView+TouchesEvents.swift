@@ -43,6 +43,8 @@ extension GVCircularMenuView {
                 delegate?.circularMenuDidOpen(self)
             }
         } else {
+            guard isOpened else { return }
+            
             for i in 0..<externalCircle.buttons.count {
                 let button = externalCircle.buttons[i]
                 let specificLocation = touch.location(in: button)
