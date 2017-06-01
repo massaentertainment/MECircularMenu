@@ -43,7 +43,11 @@ public class GVCircularMenuExternalCircle : UIView {
         for i in 0..<numberOfButtons {
             let angle = CGFloat((2.0 * Double.pi) / Double(numberOfButtons))
             let rotationAngle = CGFloat(i) * angle
-            let button = GVCircularMenuButtonView(frame: CGRect(origin: CGPoint.zero, size: frame.size), properties: [kCircularMenuButtonAngle: angle])
+            
+            var properties = dataSource.circularMenu(circularMenu, propertiesForButtonIndex: i)
+            properties[kCircularMenuButtonAngle] = angle
+            
+            let button = GVCircularMenuButtonView(frame: CGRect(origin: CGPoint.zero, size: frame.size), properties: properties)
             
             button.transform = CGAffineTransform(rotationAngle: rotationAngle)
             button.iconView.image = dataSource.circularMenu(circularMenu, inactiveImageForButtonIndex: i)

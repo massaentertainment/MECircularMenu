@@ -12,4 +12,5 @@ public protocol GVCircularMenuDataSource {
     func numberOfButtons(in circularMenu:GVCircularMenuView) -> Int
     func circularMenu(_ circularMenu:GVCircularMenuView, activeImageForButtonIndex index:Int) -> UIImage
     func circularMenu(_ circularMenu:GVCircularMenuView, inactiveImageForButtonIndex index:Int) -> UIImage
+    func circularMenu(_ circularMenu:GVCircularMenuView, propertiesForButtonIndex index:Int) -> [String:Any]
 }
