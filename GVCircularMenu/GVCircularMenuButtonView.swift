@@ -75,7 +75,7 @@ extension GVCircularMenuButtonView {
         let iconFrame = CGRect(x: 0, y: 0, width: side, height: side)
         
         iconView = UIImageView(frame: iconFrame)
-        iconView.center = CGPoint(x: radius / 2 + shapeLayer.frame.origin.x, y: radius / 2 + shapeLayer.frame.origin.y)
+        iconView.center = getIconCenterPoint(basePoint: shapeLayer.frame.origin)
         iconView.contentMode = .scaleAspectFit
         iconView.transform = CGAffineTransform(rotationAngle: .pi / 4)
         
@@ -83,17 +83,13 @@ extension GVCircularMenuButtonView {
     }
     
     fileprivate func getIconCenterPoint(basePoint:CGPoint) -> CGPoint {
-        //from the linear algebra, we rotate the point (as matrix) for half the angle of the properties
-        let baseX = radius / 2 // the center the icon is on the middle of the radius
-        let baseAngle = properties.angle / 2 // and in the middle of the arc
+        let baseAngle = properties.angle / 2.0
+        let path = CGMutablePath()
+        path.move(to: .zero)
+        path.addArc(center: path.currentPoint, radius: (radius - 2.0) / 1.5, startAngle: 0, endAngle: baseAngle, clockwise: false)
+        return CGPoint(x: path.currentPoint.x + basePoint.x, y: path.currentPoint.y + basePoint.y)
         
-        let cosValue = cos(baseAngle)
-        let sinValue = sin(baseAngle)
-        
-        let x = baseX * cosValue - basePoint.y * sinValue
-        let y = baseX * sinValue + basePoint.y * cosValue
-        
-        return CGPoint(x: x, y: y)
+        //return CGPoint(x: x, y: y)
     }
     
 }
