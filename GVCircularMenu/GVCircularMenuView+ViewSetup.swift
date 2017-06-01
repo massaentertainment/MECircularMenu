@@ -22,9 +22,10 @@ extension GVCircularMenuView {
         centerCircle.layer.cornerRadius = width / 2 //sets it circular
         
         let iconSide = centerCircle.frame.width / 2
-        centerCircleIcon = UIImageView(frame: CGRect(x: iconSide/2, y: iconSide/2, width: iconSide, height: iconSide))
+        centerCircleIcon = UIImageView(frame: CGRect(x: (centerCircle.frame.width - iconSide)/2, y: (centerCircle.frame.height - iconSide)/2, width: iconSide, height: iconSide))
         centerCircleIcon.contentMode = .scaleAspectFit
         centerCircleIcon.image = dataSource.openedImageForCenterCircle(in: self)
+        centerCircle.addSubview(centerCircleIcon)
         
         self.addSubview(centerCircle)
     }
