@@ -39,7 +39,8 @@ public class GVCircularMenuButtonView: UIView {
     }
     
     public func touch(at location:CGPoint) -> Bool {
-        return shapeLayer.frame.contains(location)
+        let pathPoint = CGPoint(x: location.x - shapeLayer.frame.origin.x, y: location.y - shapeLayer.frame.origin.y)
+        return shapeLayer.path!.contains(pathPoint)
     }
 
 }
@@ -54,18 +55,15 @@ extension GVCircularMenuButtonView {
         path.addLine(to: .zero) //ending point
         
         shapeLayer = CAShapeLayer()
-        
         //the following line converts the path boundingbox (its the smaller cgrect where the path can fit) to the view (self) coordinates space.
         shapeLayer.frame = self.convert(path.boundingBox, to: self)
         //sets the position to the midpoint between the two.
         shapeLayer.position = CGPoint(x: (layer.frame.size.width + shapeLayer.frame.size.width) / 2,
                                       y: (layer.frame.size.height + shapeLayer.frame.size.height) / 2)
         shapeLayer.path = path.copy() //the shapelayer now have the non-mutable copy of the previous created path
-        
         //setting the colors
         shapeLayer.strokeColor = properties.strokeColor.cgColor
         shapeLayer.fillColor = properties.fillColor.cgColor
-        
         //adds the shapelayer to the views layer.
         layer.addSublayer(shapeLayer)
     }
