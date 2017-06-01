@@ -11,7 +11,7 @@ import UIKit
 public class GVCircularMenuButtonView: UIView {
 
     //MARK: - Properties
-    var iconView:UIImageView!
+    private var iconView:UIImageView!
     fileprivate var shapeLayer:CAShapeLayer!
     
     public let properties:GVCircularMenuButtonViewAppearance

@@ -11,7 +11,9 @@ import UIKit
 public protocol GVCircularMenuDataSource {
     func numberOfButtons(in circularMenu:GVCircularMenuView) -> Int
     func proportionForCenterCircle(in circularMenu:GVCircularMenuView) -> CGFloat
-    func circularMenu(_ circularMenu:GVCircularMenuView, activeImageForButtonIndex index:Int) -> UIImage
-    func circularMenu(_ circularMenu:GVCircularMenuView, inactiveImageForButtonIndex index:Int) -> UIImage
+    func closedImageForCenterCircle(in circularMenu:GVCircularMenuView) -> UIImage?
+    func openedImageForCenterCircle(in circularMenu:GVCircularMenuView) -> UIImage?
+    func circularMenu(_ circularMenu:GVCircularMenuView, activeImageForButtonIndex index:Int) -> UIImage?
+    func circularMenu(_ circularMenu:GVCircularMenuView, inactiveImageForButtonIndex index:Int) -> UIImage?
     func circularMenu(_ circularMenu:GVCircularMenuView, propertiesForButtonIndex index:Int) -> [String:Any]
 }
