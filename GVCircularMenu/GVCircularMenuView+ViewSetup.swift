@@ -16,7 +16,7 @@ extension GVCircularMenuView {
     }
     
     func createCenter(){
-        let width = frame.width / 3.5
+        let width = frame.width * dataSource.proportionForCenterCircle(in: self)
         centerCircle = UIView(frame: CGRect(x: (frame.width - width) / 2, y: (frame.height - width) / 2, width: width, height: width))
         //centerCircle.center = center
         centerCircle.layer.cornerRadius = width / 2 //sets it circular
