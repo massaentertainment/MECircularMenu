@@ -14,6 +14,13 @@ Mobile Designer
 ## What is it?
 This framework is a easy-to-use CircularMenu focused on iOS UIKit-based applications. The code was written entirely in Swift 3.
 
+## Installation
+The ```MECircularMenu``` is avaliable via CocoaPods.
+
+```
+    pod 'MECircularMenu'
+```
+
 ## How to use?
 
 In this case, we will be using the datasource and the delegate on the ViewController.
