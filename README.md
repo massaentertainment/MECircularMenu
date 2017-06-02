@@ -98,7 +98,7 @@ But, first of all, you must have a MECircularMenuDataSource protocol implemented
 
 After setting up the dataSource, we now can instantiate and add to the view our ```MECircularMenu```:
 
-```
+```swift
 	class ViewController: UIViewController {
 	    
 	    //Assets on the demo project.
@@ -143,7 +143,7 @@ After setting up the dataSource, we now can instantiate and add to the view our 
 
 Setting the delegate up and also remembering that all the methods are optionals:
 
-```
+```swift
 
 	extension ViewController : MECircularMenuDelegate {
 
