@@ -10,6 +10,16 @@ import UIKit
 
 extension GVCircularMenuView {
     
+    public func rotate(_ sender:Any?) {
+        guard let recognizer = sender as? OneFingerRotationGestureRecognizer, recognizer.state != .ended else {
+            return
+        }
+        
+        let direction = recognizer.currentAngle - recognizer.previousAngle
+        let prevTransform = externalCircle.transform
+        externalCircle.transform = prevTransform.rotated(by: direction)
+    }
+    
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }
         let location = touch.location(in: self)
@@ -20,12 +30,16 @@ extension GVCircularMenuView {
         guard let touch = touches.first, let sprview = superview else { return }
         
         let location = touch.location(in: self)
-        let anglePerPoint = CGFloat(Double.pi) / (sprview.frame.size.width / 2)
+        let anglePerPoint = CGFloat(Double.pi) / (sprview.frame.size.width / 4)
         let deltaX = location.x - lastTouchPoint.x
         
-        rotationAngle -= deltaX * anglePerPoint
+        
+        rotationAngle += atan2(location.x - frame.midX, location.y - frame.midY) * anglePerPoint //max(deltaX, deltaY) * anglePerPoint
         externalCircle.transform = CGAffineTransform(rotationAngle: rotationAngle)
         lastTouchPoint = location
+        
+//        let radToRotate = atan2(location.y - frame.midX, location.x - frame.midY)
+//        externalCircle.transform = CGAffineTransform(rotationAngle: radToRotate)
     }
     
     public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
