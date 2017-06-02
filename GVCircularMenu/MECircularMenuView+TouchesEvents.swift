@@ -24,7 +24,6 @@ extension MECircularMenuView {
         let deltaX = location.x - lastTouchPoint.x
         
         if location.y < frame.height / 2 {
-            print("top")
             rotationAngle += deltaX * anglePerPoint
         } else {
             rotationAngle -= deltaX * anglePerPoint
