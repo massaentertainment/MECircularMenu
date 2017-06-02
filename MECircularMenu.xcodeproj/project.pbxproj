@@ -137,9 +137,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BE293DEA1EDF3D1E0052C06D /* GVCircularMenu */ = {
+		BE293DEA1EDF3D1E0052C06D /* MECircularMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE293DF31EDF3D1E0052C06D /* Build configuration list for PBXNativeTarget "GVCircularMenu" */;
+			buildConfigurationList = BE293DF31EDF3D1E0052C06D /* Build configuration list for PBXNativeTarget "MECircularMenu" */;
 			buildPhases = (
 				BE293DE61EDF3D1E0052C06D /* Sources */,
 				BE293DE71EDF3D1E0052C06D /* Frameworks */,
@@ -150,7 +150,7 @@
 			);
 			dependencies = (
 			);
-			name = GVCircularMenu;
+			name = MECircularMenu;
 			productName = GVCircularMenu;
 			productReference = BE293DEB1EDF3D1E0052C06D /* MECircularMenu.framework */;
 			productType = "com.apple.product-type.framework";
@@ -172,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BE293DE51EDF3D1E0052C06D /* Build configuration list for PBXProject "GVCircularMenu" */;
+			buildConfigurationList = BE293DE51EDF3D1E0052C06D /* Build configuration list for PBXProject "MECircularMenu" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -184,7 +184,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BE293DEA1EDF3D1E0052C06D /* GVCircularMenu */,
+				BE293DEA1EDF3D1E0052C06D /* MECircularMenu */,
 			);
 		};
 /* End PBXProject section */
@@ -367,7 +367,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BE293DE51EDF3D1E0052C06D /* Build configuration list for PBXProject "GVCircularMenu" */ = {
+		BE293DE51EDF3D1E0052C06D /* Build configuration list for PBXProject "MECircularMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE293DF11EDF3D1E0052C06D /* Debug */,
@@ -376,7 +376,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BE293DF31EDF3D1E0052C06D /* Build configuration list for PBXNativeTarget "GVCircularMenu" */ = {
+		BE293DF31EDF3D1E0052C06D /* Build configuration list for PBXNativeTarget "MECircularMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE293DF41EDF3D1E0052C06D /* Debug */,
