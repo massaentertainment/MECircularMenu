@@ -13,6 +13,8 @@ extension MECircularMenuView {
     func viewSetup(){
         createExternalCircle()
         createCenter()
+        
+        createTapRecognizer()
     }
     
     func createCenter(){
@@ -38,5 +40,13 @@ extension MECircularMenuView {
         externalCircle.buttons[activeButtonIndex].iconView.image = dataSource.circularMenu?(self, activeImageForButtonIndex: activeButtonIndex)
         
         self.addSubview(externalCircle)
+    }
+    
+    func createTapRecognizer() {
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(self.onTap(_:)))
+        recognizer.numberOfTapsRequired = 1
+        recognizer.numberOfTouchesRequired = 1
+        
+        self.addGestureRecognizer(recognizer)
     }
 }

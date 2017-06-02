@@ -10,6 +10,21 @@ import UIKit
 
 extension MECircularMenuView {
     
+    public func onTap(_ sender:Any?){
+        if let recognizer = sender as? UITapGestureRecognizer {
+            guard recognizer.state == .ended && isOpened else { return }
+            
+            for i in 0..<externalCircle.buttons.count {
+                let button = externalCircle.buttons[i]
+                let specificLocation = recognizer.location(in: button)
+                if button.touch(at: specificLocation) {
+                    setActive(buttonIndex: i)
+                    break
+                }
+            }
+        }
+    }
+    
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }
         let location = touch.location(in: self)
@@ -47,17 +62,6 @@ extension MECircularMenuView {
                 centerCircleIcon.image = dataSource.openedImageForCenterCircle?(in: self)
                 externalCircle.setOpen(!isOpened)
                 delegate?.circularMenuDidOpen?(self)
-            }
-        } else {
-            guard isOpened else { return }
-            
-            for i in 0..<externalCircle.buttons.count {
-                let button = externalCircle.buttons[i]
-                let specificLocation = touch.location(in: button)
-                if button.touch(at: specificLocation) {
-                    setActive(buttonIndex: i)
-                    break
-                }
             }
         }
     }
