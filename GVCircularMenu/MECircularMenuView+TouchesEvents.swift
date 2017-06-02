@@ -12,14 +12,31 @@ extension MECircularMenuView {
     
     public func onTap(_ sender:Any?){
         if let recognizer = sender as? UITapGestureRecognizer {
-            guard recognizer.state == .ended && isOpened else { return }
+            guard recognizer.state == .ended else { return }
             
-            for i in 0..<externalCircle.buttons.count {
-                let button = externalCircle.buttons[i]
-                let specificLocation = recognizer.location(in: button)
-                if button.touch(at: specificLocation) {
-                    setActive(buttonIndex: i)
-                    break
+            let location = recognizer.location(in: self)
+            if centerCircle.frame.contains(location){
+                if isOpened {
+                    delegate?.circularMenuWillClose?(self)
+                    centerCircleIcon.image = dataSource.closedImageForCenterCircle?(in: self)
+                    externalCircle.setOpen(!isOpened)
+                    delegate?.circularMenuDidClose?(self)
+                } else {
+                    delegate?.circularMenuWillOpen?(self)
+                    centerCircleIcon.image = dataSource.openedImageForCenterCircle?(in: self)
+                    externalCircle.setOpen(!isOpened)
+                    delegate?.circularMenuDidOpen?(self)
+                }
+            } else {
+                if isOpened {
+                    for i in 0..<externalCircle.buttons.count {
+                        let button = externalCircle.buttons[i]
+                        let specificLocation = recognizer.location(in: button)
+                        if button.touch(at: specificLocation) {
+                            setActive(buttonIndex: i)
+                            break
+                        }
+                    }
                 }
             }
         }
@@ -45,25 +62,6 @@ extension MECircularMenuView {
         }
         externalCircle.transform = CGAffineTransform(rotationAngle: rotationAngle)
         lastTouchPoint = location
-    }
-    
-    public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard let touch = touches.first else { return }
-        
-        let location = touch.location(in: self)
-        if centerCircle.frame.contains(location){
-            if isOpened {
-                delegate?.circularMenuWillClose?(self)
-                centerCircleIcon.image = dataSource.closedImageForCenterCircle?(in: self)
-                externalCircle.setOpen(!isOpened)
-                delegate?.circularMenuDidClose?(self)
-            } else {
-                delegate?.circularMenuWillOpen?(self)
-                centerCircleIcon.image = dataSource.openedImageForCenterCircle?(in: self)
-                externalCircle.setOpen(!isOpened)
-                delegate?.circularMenuDidOpen?(self)
-            }
-        }
     }
     
 }
