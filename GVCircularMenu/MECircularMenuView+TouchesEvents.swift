@@ -23,8 +23,12 @@ extension MECircularMenuView {
         let anglePerPoint = CGFloat(Double.pi) / (sprview.frame.size.width / 4)
         let deltaX = location.x - lastTouchPoint.x
         
-        
-        rotationAngle -= deltaX * anglePerPoint
+        if location.y < frame.height / 2 {
+            print("top")
+            rotationAngle += deltaX * anglePerPoint
+        } else {
+            rotationAngle -= deltaX * anglePerPoint
+        }
         externalCircle.transform = CGAffineTransform(rotationAngle: rotationAngle)
         lastTouchPoint = location
     }
