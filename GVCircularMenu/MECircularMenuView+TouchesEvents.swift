@@ -1,6 +1,6 @@
 //
-//  GVCircularMenuView+TouchesEvents.swift
-//  GVCircularMenu
+//  MECircularMenuView+TouchesEvents.swift
+//  MECircularMenu
 //
 //  Created by Gabriel Bezerra Valério on 31/05/17.
 //  Copyright © 2017 bepiducb. All rights reserved.
@@ -8,17 +8,7 @@
 
 import UIKit
 
-extension GVCircularMenuView {
-    
-    public func rotate(_ sender:Any?) {
-        guard let recognizer = sender as? OneFingerRotationGestureRecognizer, recognizer.state != .ended else {
-            return
-        }
-        
-        let direction = recognizer.currentAngle - recognizer.previousAngle
-        let prevTransform = externalCircle.transform
-        externalCircle.transform = prevTransform.rotated(by: direction)
-    }
+extension MECircularMenuView {
     
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }
@@ -34,12 +24,9 @@ extension GVCircularMenuView {
         let deltaX = location.x - lastTouchPoint.x
         
         
-        rotationAngle += atan2(location.x - frame.midX, location.y - frame.midY) * anglePerPoint //max(deltaX, deltaY) * anglePerPoint
+        rotationAngle -= deltaX * anglePerPoint
         externalCircle.transform = CGAffineTransform(rotationAngle: rotationAngle)
         lastTouchPoint = location
-        
-//        let radToRotate = atan2(location.y - frame.midX, location.x - frame.midY)
-//        externalCircle.transform = CGAffineTransform(rotationAngle: radToRotate)
     }
     
     public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {

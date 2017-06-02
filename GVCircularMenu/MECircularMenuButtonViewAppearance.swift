@@ -1,6 +1,6 @@
 //
-//  GVCircularMenuButtonViewAppearance.swift
-//  GVCircularMenu
+//  MECircularMenuButtonViewAppearance.swift
+//  MECircularMenu
 //
 //  Created by Gabriel Bezerra Valério on 31/05/17.
 //  Copyright © 2017 bepiducb. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public struct GVCircularMenuButtonViewAppearance  {
+public struct MECircularMenuButtonViewAppearance  {
 
     public var angle:CGFloat
     public var backgroundColor:UIColor

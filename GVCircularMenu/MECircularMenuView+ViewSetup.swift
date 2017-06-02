@@ -1,6 +1,6 @@
 //
-//  GVCircularMenuView+ViewSetup.swift
-//  GVCircularMenu
+//  MECircularMenuView+ViewSetup.swift
+//  MECircularMenu
 //
 //  Created by Gabriel Bezerra Valério on 31/05/17.
 //  Copyright © 2017 bepiducb. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension GVCircularMenuView {
+extension MECircularMenuView {
     
     func viewSetup(){
         createExternalCircle()
@@ -31,7 +31,7 @@ extension GVCircularMenuView {
     }
     
     func createExternalCircle() {
-        externalCircle = GVCircularMenuExternalCircle(frame: CGRect(origin: .zero, size: frame.size), dataSource: dataSource, parent: self)
+        externalCircle = MECircularMenuExternalCircle(frame: CGRect(origin: .zero, size: frame.size), dataSource: dataSource, parent: self)
         
         rotationAngle += CGFloat(Double.pi / Double(externalCircle.buttons.count))
         externalCircle.transform = CGAffineTransform(rotationAngle: rotationAngle)

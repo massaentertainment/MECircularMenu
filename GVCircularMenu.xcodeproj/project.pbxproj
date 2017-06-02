@@ -7,35 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE293DF01EDF3D1E0052C06D /* GVCircularMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = BE293DEE1EDF3D1E0052C06D /* GVCircularMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE293DF91EDF3DD20052C06D /* GVCircularMenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DF81EDF3DD20052C06D /* GVCircularMenuButtonView.swift */; };
-		BE293DFB1EDF42680052C06D /* GVCircularMenuButtonViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DFA1EDF42670052C06D /* GVCircularMenuButtonViewAppearance.swift */; };
+		BE293DF01EDF3D1E0052C06D /* MECircularMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = BE293DEE1EDF3D1E0052C06D /* MECircularMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE293DF91EDF3DD20052C06D /* MECircularMenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DF81EDF3DD20052C06D /* MECircularMenuButtonView.swift */; };
+		BE293DFB1EDF42680052C06D /* MECircularMenuButtonViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DFA1EDF42670052C06D /* MECircularMenuButtonViewAppearance.swift */; };
 		BE293DFD1EDF43670052C06D /* CircularMenuConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293DFC1EDF43670052C06D /* CircularMenuConstants.swift */; };
-		BE293E291EDF5B450052C06D /* GVCircularMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E281EDF5B450052C06D /* GVCircularMenuView.swift */; };
-		BE293E2C1EDF5B850052C06D /* GVCircularMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2B1EDF5B850052C06D /* GVCircularMenuDataSource.swift */; };
-		BE293E2E1EDF5B9E0052C06D /* GVCircularMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2D1EDF5B9E0052C06D /* GVCircularMenuDelegate.swift */; };
-		BE293E301EDF5D710052C06D /* GVCircularMenuView+ViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2F1EDF5D710052C06D /* GVCircularMenuView+ViewSetup.swift */; };
-		BE293E331EDF5ED50052C06D /* GVCircularMenuExternalCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E321EDF5ED50052C06D /* GVCircularMenuExternalCircle.swift */; };
-		BE293E351EDF5FC50052C06D /* GVCircularMenuExternalCircle+ViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E341EDF5FC50052C06D /* GVCircularMenuExternalCircle+ViewSetup.swift */; };
-		BE293E371EDF7F020052C06D /* GVCircularMenuView+TouchesEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E361EDF7F020052C06D /* GVCircularMenuView+TouchesEvents.swift */; };
-		BE293E4E1EE188A50052C06D /* OneFingerRotationGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E4D1EE188A50052C06D /* OneFingerRotationGestureRecognizer.swift */; };
+		BE293E291EDF5B450052C06D /* MECircularMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E281EDF5B450052C06D /* MECircularMenuView.swift */; };
+		BE293E2C1EDF5B850052C06D /* MECircularMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2B1EDF5B850052C06D /* MECircularMenuDataSource.swift */; };
+		BE293E2E1EDF5B9E0052C06D /* MECircularMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2D1EDF5B9E0052C06D /* MECircularMenuDelegate.swift */; };
+		BE293E301EDF5D710052C06D /* MECircularMenuView+ViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E2F1EDF5D710052C06D /* MECircularMenuView+ViewSetup.swift */; };
+		BE293E331EDF5ED50052C06D /* MECircularMenuExternalCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E321EDF5ED50052C06D /* MECircularMenuExternalCircle.swift */; };
+		BE293E351EDF5FC50052C06D /* MECircularMenuExternalCircle+ViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E341EDF5FC50052C06D /* MECircularMenuExternalCircle+ViewSetup.swift */; };
+		BE293E371EDF7F020052C06D /* MECircularMenuView+TouchesEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE293E361EDF7F020052C06D /* MECircularMenuView+TouchesEvents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BE293DEB1EDF3D1E0052C06D /* GVCircularMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GVCircularMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE293DEE1EDF3D1E0052C06D /* GVCircularMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GVCircularMenu.h; sourceTree = "<group>"; };
+		BE293DEB1EDF3D1E0052C06D /* MECircularMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MECircularMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE293DEE1EDF3D1E0052C06D /* MECircularMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MECircularMenu.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		BE293DEF1EDF3D1E0052C06D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE293DF81EDF3DD20052C06D /* GVCircularMenuButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GVCircularMenuButtonView.swift; sourceTree = "<group>"; };
-		BE293DFA1EDF42670052C06D /* GVCircularMenuButtonViewAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GVCircularMenuButtonViewAppearance.swift; sourceTree = "<group>"; };
-		BE293DFC1EDF43670052C06D /* CircularMenuConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMenuConstants.swift; sourceTree = "<group>"; };
-		BE293E281EDF5B450052C06D /* GVCircularMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = GVCircularMenuView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		BE293E2B1EDF5B850052C06D /* GVCircularMenuDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = GVCircularMenuDataSource.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		BE293E2D1EDF5B9E0052C06D /* GVCircularMenuDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = GVCircularMenuDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		BE293E2F1EDF5D710052C06D /* GVCircularMenuView+ViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "GVCircularMenuView+ViewSetup.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		BE293E321EDF5ED50052C06D /* GVCircularMenuExternalCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = GVCircularMenuExternalCircle.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		BE293E341EDF5FC50052C06D /* GVCircularMenuExternalCircle+ViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GVCircularMenuExternalCircle+ViewSetup.swift"; sourceTree = "<group>"; };
-		BE293E361EDF7F020052C06D /* GVCircularMenuView+TouchesEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "GVCircularMenuView+TouchesEvents.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		BE293E4D1EE188A50052C06D /* OneFingerRotationGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneFingerRotationGestureRecognizer.swift; sourceTree = "<group>"; };
+		BE293DF81EDF3DD20052C06D /* MECircularMenuButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MECircularMenuButtonView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BE293DFA1EDF42670052C06D /* MECircularMenuButtonViewAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MECircularMenuButtonViewAppearance.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BE293DFC1EDF43670052C06D /* CircularMenuConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CircularMenuConstants.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BE293E281EDF5B450052C06D /* MECircularMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MECircularMenuView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BE293E2B1EDF5B850052C06D /* MECircularMenuDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MECircularMenuDataSource.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BE293E2D1EDF5B9E0052C06D /* MECircularMenuDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MECircularMenuDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BE293E2F1EDF5D710052C06D /* MECircularMenuView+ViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "MECircularMenuView+ViewSetup.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BE293E321EDF5ED50052C06D /* MECircularMenuExternalCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MECircularMenuExternalCircle.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BE293E341EDF5FC50052C06D /* MECircularMenuExternalCircle+ViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "MECircularMenuExternalCircle+ViewSetup.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BE293E361EDF7F020052C06D /* MECircularMenuView+TouchesEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "MECircularMenuView+TouchesEvents.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +50,7 @@
 		BE293DE11EDF3D1E0052C06D = {
 			isa = PBXGroup;
 			children = (
-				BE293DED1EDF3D1E0052C06D /* GVCircularMenu */,
+				BE293DED1EDF3D1E0052C06D /* MECircularMenu */,
 				BE293DEC1EDF3D1E0052C06D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,21 +58,21 @@
 		BE293DEC1EDF3D1E0052C06D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE293DEB1EDF3D1E0052C06D /* GVCircularMenu.framework */,
+				BE293DEB1EDF3D1E0052C06D /* MECircularMenu.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BE293DED1EDF3D1E0052C06D /* GVCircularMenu */ = {
+		BE293DED1EDF3D1E0052C06D /* MECircularMenu */ = {
 			isa = PBXGroup;
 			children = (
-				BE293E4C1EE188650052C06D /* Misc */,
 				BE293E2A1EDF5B6B0052C06D /* Protocols */,
 				BE293DF61EDF3D900052C06D /* View */,
-				BE293DEE1EDF3D1E0052C06D /* GVCircularMenu.h */,
+				BE293DEE1EDF3D1E0052C06D /* MECircularMenu.h */,
 				BE293DEF1EDF3D1E0052C06D /* Info.plist */,
 				BE293DFC1EDF43670052C06D /* CircularMenuConstants.swift */,
 			);
+			name = MECircularMenu;
 			path = GVCircularMenu;
 			sourceTree = "<group>";
 		};
@@ -91,8 +89,8 @@
 		BE293DF71EDF3DA50052C06D /* CircularMenuButton */ = {
 			isa = PBXGroup;
 			children = (
-				BE293DF81EDF3DD20052C06D /* GVCircularMenuButtonView.swift */,
-				BE293DFA1EDF42670052C06D /* GVCircularMenuButtonViewAppearance.swift */,
+				BE293DF81EDF3DD20052C06D /* MECircularMenuButtonView.swift */,
+				BE293DFA1EDF42670052C06D /* MECircularMenuButtonViewAppearance.swift */,
 			);
 			name = CircularMenuButton;
 			sourceTree = "<group>";
@@ -100,9 +98,9 @@
 		BE293E271EDF5B180052C06D /* CircularMenu */ = {
 			isa = PBXGroup;
 			children = (
-				BE293E281EDF5B450052C06D /* GVCircularMenuView.swift */,
-				BE293E2F1EDF5D710052C06D /* GVCircularMenuView+ViewSetup.swift */,
-				BE293E361EDF7F020052C06D /* GVCircularMenuView+TouchesEvents.swift */,
+				BE293E281EDF5B450052C06D /* MECircularMenuView.swift */,
+				BE293E2F1EDF5D710052C06D /* MECircularMenuView+ViewSetup.swift */,
+				BE293E361EDF7F020052C06D /* MECircularMenuView+TouchesEvents.swift */,
 			);
 			name = CircularMenu;
 			sourceTree = "<group>";
@@ -110,8 +108,8 @@
 		BE293E2A1EDF5B6B0052C06D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				BE293E2B1EDF5B850052C06D /* GVCircularMenuDataSource.swift */,
-				BE293E2D1EDF5B9E0052C06D /* GVCircularMenuDelegate.swift */,
+				BE293E2B1EDF5B850052C06D /* MECircularMenuDataSource.swift */,
+				BE293E2D1EDF5B9E0052C06D /* MECircularMenuDelegate.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -119,18 +117,10 @@
 		BE293E311EDF5EB30052C06D /* CircularMenuExternalCircle */ = {
 			isa = PBXGroup;
 			children = (
-				BE293E321EDF5ED50052C06D /* GVCircularMenuExternalCircle.swift */,
-				BE293E341EDF5FC50052C06D /* GVCircularMenuExternalCircle+ViewSetup.swift */,
+				BE293E321EDF5ED50052C06D /* MECircularMenuExternalCircle.swift */,
+				BE293E341EDF5FC50052C06D /* MECircularMenuExternalCircle+ViewSetup.swift */,
 			);
 			name = CircularMenuExternalCircle;
-			sourceTree = "<group>";
-		};
-		BE293E4C1EE188650052C06D /* Misc */ = {
-			isa = PBXGroup;
-			children = (
-				BE293E4D1EE188A50052C06D /* OneFingerRotationGestureRecognizer.swift */,
-			);
-			name = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +130,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE293DF01EDF3D1E0052C06D /* GVCircularMenu.h in Headers */,
+				BE293DF01EDF3D1E0052C06D /* MECircularMenu.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +152,7 @@
 			);
 			name = GVCircularMenu;
 			productName = GVCircularMenu;
-			productReference = BE293DEB1EDF3D1E0052C06D /* GVCircularMenu.framework */;
+			productReference = BE293DEB1EDF3D1E0052C06D /* MECircularMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -214,17 +204,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE293E2C1EDF5B850052C06D /* GVCircularMenuDataSource.swift in Sources */,
+				BE293E2C1EDF5B850052C06D /* MECircularMenuDataSource.swift in Sources */,
 				BE293DFD1EDF43670052C06D /* CircularMenuConstants.swift in Sources */,
-				BE293E2E1EDF5B9E0052C06D /* GVCircularMenuDelegate.swift in Sources */,
-				BE293E371EDF7F020052C06D /* GVCircularMenuView+TouchesEvents.swift in Sources */,
-				BE293DFB1EDF42680052C06D /* GVCircularMenuButtonViewAppearance.swift in Sources */,
-				BE293E4E1EE188A50052C06D /* OneFingerRotationGestureRecognizer.swift in Sources */,
-				BE293E331EDF5ED50052C06D /* GVCircularMenuExternalCircle.swift in Sources */,
-				BE293E291EDF5B450052C06D /* GVCircularMenuView.swift in Sources */,
-				BE293E301EDF5D710052C06D /* GVCircularMenuView+ViewSetup.swift in Sources */,
-				BE293E351EDF5FC50052C06D /* GVCircularMenuExternalCircle+ViewSetup.swift in Sources */,
-				BE293DF91EDF3DD20052C06D /* GVCircularMenuButtonView.swift in Sources */,
+				BE293E2E1EDF5B9E0052C06D /* MECircularMenuDelegate.swift in Sources */,
+				BE293E371EDF7F020052C06D /* MECircularMenuView+TouchesEvents.swift in Sources */,
+				BE293DFB1EDF42680052C06D /* MECircularMenuButtonViewAppearance.swift in Sources */,
+				BE293E331EDF5ED50052C06D /* MECircularMenuExternalCircle.swift in Sources */,
+				BE293E291EDF5B450052C06D /* MECircularMenuView.swift in Sources */,
+				BE293E301EDF5D710052C06D /* MECircularMenuView+ViewSetup.swift in Sources */,
+				BE293E351EDF5FC50052C06D /* MECircularMenuExternalCircle+ViewSetup.swift in Sources */,
+				BE293DF91EDF3DD20052C06D /* MECircularMenuButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,8 +335,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.bepiducb.GVCircularMenu;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.massaentertainment.MECircularMenu;
+				PRODUCT_NAME = MECircularMenu;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -368,8 +357,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.bepiducb.GVCircularMenu;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.massaentertainment.MECircularMenu;
+				PRODUCT_NAME = MECircularMenu;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
